@@ -887,6 +887,8 @@ function App() {
         setTerminalInput('');
         setTimeout(() => {
           if (downloadRef.current) {
+            downloadRef.current.setAttribute('href', '/assets/George_CV.pdf');
+            downloadRef.current.setAttribute('download', 'George_Youssef_CV.pdf');
             downloadRef.current.click();
           }
         }, 300);
@@ -1066,7 +1068,7 @@ function App() {
         </AnimatePresence>
 
         <a
-          href="/assets/George_Cv-7.pdf"
+          href="/assets/George_CV.pdf"
           download="George_Youssef_CV.pdf"
           ref={downloadRef}
           style={{ display: 'none' }}

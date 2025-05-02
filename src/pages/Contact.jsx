@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
+import myCV from '../assets/George_CV.pdf'; // Adjust the path as needed
 
 // Initialize EmailJS
 emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your public key
@@ -203,8 +204,8 @@ function Contact() {
         </ContactCard>
 
         <ContactCard
-          href="/assets/George_Cv-7.pdf"
-          download
+          href={myCV}
+          download="George_Youssef_CV.pdf"
           variants={cardVariants}
           initial="hidden"
           animate="visible"
