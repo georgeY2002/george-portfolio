@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import BinaryRain from './components/BinaryRain';
 import { useState, useEffect, useRef } from 'react';
+import myCV from './assets/George_CV.pdf'; // Adjust the path if needed
 
 const matrixRain = keyframes`
   0% { transform: translateY(-100%); }
@@ -887,7 +888,7 @@ function App() {
         setTerminalInput('');
         setTimeout(() => {
           if (downloadRef.current) {
-            downloadRef.current.setAttribute('href', '/assets/George_CV.pdf');
+            downloadRef.current.setAttribute('href', myCV);
             downloadRef.current.setAttribute('download', 'George_Youssef_CV.pdf');
             downloadRef.current.click();
           }
@@ -1068,7 +1069,7 @@ function App() {
         </AnimatePresence>
 
         <a
-          href="/assets/George_CV.pdf"
+          href={myCV}
           download="George_Youssef_CV.pdf"
           ref={downloadRef}
           style={{ display: 'none' }}
