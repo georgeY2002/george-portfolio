@@ -260,7 +260,7 @@ const HelpHeader = styled.div`
     gap: 0.5rem;
 
     &::before {
-      content: 'user@portfolio:~$';
+      content: 'GeorgeYoussef@portfolio:~$';
       color: var(--accent-color);
       font-size: 0.9rem;
       opacity: 0.8;
@@ -418,7 +418,7 @@ const ResourceHeader = styled.div`
     gap: 0.5rem;
 
     &::before {
-      content: 'user@portfolio:~$';
+      content: 'GeorgeYoussef@portfolio:~$';
       color: var(--accent-color);
       font-size: 0.9rem;
       opacity: 0.8;
@@ -735,7 +735,7 @@ const TerminalModePrompt = styled.div`
   font-size: 1.1rem;
 
   &::before {
-    content: 'user@portfolio:~$';
+    content: 'GeorgeYoussef@portfolio:~$';
     color: var(--accent-color);
   }
 `;

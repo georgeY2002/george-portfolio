@@ -141,7 +141,7 @@ const TerminalPrompt = styled(motion.div)`
   text-overflow: ellipsis;
   
   &::before {
-    content: 'user@portfolio:~$';
+    content: 'GeorgeYoussef@portfolio:~$';
     margin-right: 0.5rem;
     color: var(--primary-color);
   }
